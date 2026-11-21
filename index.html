@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cine Laguna | Alagoinhas - Shopping Laguna & Unidade Geek</title>
+  <meta name="description" content="Confira os filmes em cartaz, horários das sessões, valores e promoções do Cine Laguna (Shopping Laguna e Unidade Geek - Praça Ruy Barbosa) em Alagoinhas - BA.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Cinzel"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            cine: {
+              dark: '#09090B',
+              card: '#131318',
+              border: '#27272A',
+              red: '#E50914',
+              redHover: '#B80710',
+              gold: '#F59E0B',
+              purple: '#8B5CF6',
+              muted: '#A1A1AA'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #09090B;
+      color: #F4F4F5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .movie-card:hover .movie-poster {
+      transform: scale(1.05);
+    }
+    .glow-red {
+      box-shadow: 0 0 35px -10px rgba(229, 9, 20, 0.45);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-cine-red selection:text-white">
+
+  <!-- Barra Superior -->
+  <div class="bg-cine-red text-white text-[11px] sm:text-xs tracking-[0.12em] uppercase text-center py-2 px-4 font-semibold">
+    🍿 Quarta Promocional: Todos pagam Meia-Entrada • Shopping Laguna & Unidade Geek (Praça Ruy Barbosa)
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-cine-dark/90 backdrop-blur-md border-b border-cine-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-cine-red flex items-center justify-center text-white shadow-lg">
+          <i data-lucide="film" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <span class="font-display text-xl sm:text-2xl font-bold tracking-wider text-white block leading-none">
+            CINE <span class="text-cine-red">LAGUNA</span>
+          </span>
+          <span class="text-[10px] tracking-[0.25em] text-cine-gold uppercase font-semibold">
+            2 Unidades • Alagoinhas
+          </span>
+        </div>
+      </a>
+
+      <!-- Links Desktop -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-[0.16em] font-medium text-cine-muted">
+        <a href="#programacao" class="hover:text-white transition-colors">Programação</a>
+        <a href="#valores" class="hover:text-white transition-colors">Ingressos</a>
+        <a href="#bomboniere" class="hover:text-white transition-colors">Bomboniere</a>
+        <a href="#unidades" class="hover:text-white transition-colors">Nossas Unidades</a>
+      </nav>
+
+      <!-- Botão WhatsApp -->
+      <a href="https://wa.me/5575999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20sess%C3%B5es%20de%20hoje%20no%20Cine%20Laguna." 
+         target="_blank"
+         class="inline-flex items-center gap-2 bg-cine-red hover:bg-cine-redHover text-white text-xs uppercase tracking-[0.14em] font-semibold px-5 py-3 rounded-md transition-all glow-red">
+        <i data-lucide="ticket" class="w-4 h-4"></i>
+        <span>Atendimento</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Destaque -->
+  <section class="relative overflow-hidden border-b border-cine-border">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(229,9,20,0.18),_transparent_55%)] pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-24 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cine-card border border-cine-border text-cine-gold text-xs font-medium">
+            <span class="w-2 h-2 rounded-full bg-cine-red animate-pulse"></span>
+            Shopping Laguna & Cine Laguna Geek (Praça Ruy Barbosa)
+          </div>
+          
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.12]">
+            A magia da tela grande em dois pontos de <span class="text-cine-red">Alagoinhas</span>.
+          </h1>
+          
+          <p class="text-sm sm:text-base text-cine-muted max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            Confira a programação atualizada, escolha sua unidade favorita e veja os horários das sessões, promoções e valores em um só lugar.
+          </p>
+          
+          <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a href="#programacao" 
+               class="bg-cine-red hover:bg-cine-redHover text-white text-xs uppercase tracking-[0.18em] font-semibold px-8 py-4 rounded-md transition-all text-center glow-red">
+              Ver Filmes em Cartaz
+            </a>
+            <a href="#unidades" 
+               class="bg-cine-card hover:bg-zinc-800 border border-cine-border text-white text-xs uppercase tracking-[0.18em] font-semibold px-8 py-4 rounded-md transition-all text-center">
+              Conhecer as 2 Unidades
+            </a>
+          </div>
+        </div>
+
+        <!-- Card Destaque -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-xl overflow-hidden border border-cine-border bg-cine-card shadow-2xl">
+            <div class="aspect-[16/10] overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=85" 
+                   alt="Sala de Cinema Cine Laguna" 
+                   class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-cine-card via-cine-card/30 to-transparent"></div>
+              <span class="absolute top-4 left-4 bg-cine-gold text-black text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded">
+                Experiência Completa
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold text-white">Duas Salas, Mesma Emoção</h3>
+              <p class="text-xs text-cine-muted mt-2 leading-relaxed">
+                Seja no conforto do Shopping Laguna ou no clima temático da unidade Geek na Praça Ruy Barbosa, você curte os maiores lançamentos com som imersivo e pipoca quentinha.
+              </p>
+              <div class="mt-4 pt-4 border-t border-cine-border flex items-center justify-between text-xs">
+                <span class="text-cine-muted flex items-center gap-1.5">
+                  <i data-lucide="map-pin" class="w-4 h-4 text-cine-red"></i>
+                  Shopping & Centro
+                </span>
+                <span class="text-cine-gold font-semibold">Sessões Diárias</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Programação Dinâmica (Alimentada via Google Sheets ou Fallback) -->
+  <section id="programacao" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+      <div>
+        <span class="text-xs uppercase tracking-[0.25em] text-cine-red font-bold">Agenda Semanal</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-1">Programação</h2>
+      </div>
+
+      <!-- Filtros Combinados (Unidade + Status) -->
+      <div class="flex flex-col sm:flex-row gap-3">
+        <!-- Filtro Unidade -->
+        <div class="inline-flex rounded-lg bg-cine-card p-1 border border-cine-border">
+          <button onclick="setUnitFilter('todas', this)" class="unit-btn px-3.5 py-2 rounded-md text-xs font-semibold bg-zinc-800 text-white transition-all">
+            Todas Unidades
+          </button>
+          <button onclick="setUnitFilter('shopping', this)" class="unit-btn px-3.5 py-2 rounded-md text-xs font-semibold text-cine-muted hover:text-white transition-all">
+            Shopping Laguna
+          </button>
+          <button onclick="setUnitFilter('geek', this)" class="unit-btn px-3.5 py-2 rounded-md text-xs font-semibold text-cine-muted hover:text-white transition-all">
+            Unidade Geek
+          </button>
+        </div>
+
+        <!-- Filtro Status -->
+        <div class="inline-flex rounded-lg bg-cine-card p-1 border border-cine-border">
+          <button onclick="setStatusFilter('cartaz', this)" class="status-btn px-4 py-2 rounded-md text-xs uppercase tracking-wider font-semibold bg-cine-red text-white transition-all">
+            Em Cartaz
+          </button>
+          <button onclick="setStatusFilter('breve', this)" class="status-btn px-4 py-2 rounded-md text-xs uppercase tracking-wider font-semibold text-cine-muted hover:text-white transition-all">
+            Em Breve
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container onde os cards são gerados automaticamente -->
+    <div id="movies-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+      <!-- Preenchido via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Tabela de Ingressos & Bomboniere -->
+  <section id="valores" class="bg-cine-card border-y border-cine-border py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
+        <!-- Ingressos -->
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-cine-red font-bold">Bilheteria</span>
+          <h2 class="font-display text-3xl font-bold text-white mt-1 mb-6">Valores dos Ingressos</h2>
+          
+          <div class="space-y-4">
+            <div class="p-5 rounded-xl bg-cine-dark border border-cine-border flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold text-white">Sessões 2D (Seg, Ter, Qui a Dom)</h3>
+                <p class="text-xs text-cine-muted mt-1">Válido para Shopping Laguna e Unidade Geek</p>
+              </div>
+              <div class="text-right">
+                <span class="block text-xs text-cine-muted">Meia / Inteira</span>
+                <span class="text-lg font-bold text-cine-gold">R$ 15 / R$ 30</span>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-cine-dark border border-cine-border flex items-center justify-between">
+              <div>
+                <h3 class="font-semibold text-white">Sessões 3D (Seg, Ter, Qui a Dom)</h3>
+                <p class="text-xs text-cine-muted mt-1">Óculos 3D higienizados inclusos na sessão</p>
+              </div>
+              <div class="text-right">
+                <span class="block text-xs text-cine-muted">Meia / Inteira</span>
+                <span class="text-lg font-bold text-cine-gold">R$ 18 / R$ 36</span>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-gradient-to-r from-cine-red/20 to-cine-dark border border-cine-red/50 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] uppercase tracking-wider bg-cine-red text-white px-2 py-0.5 rounded font-bold">Promoção</span>
+                <h3 class="font-semibold text-white mt-1">Quarta-Feira Maluca</h3>
+                <p class="text-xs text-cine-muted mt-0.5">Todo mundo paga meia-entrada nas duas unidades!</p>
+              </div>
+              <div class="text-right">
+                <span class="text-xl font-bold text-white">Meia p/ Todos</span>
+              </div>
+            </div>
+          </div>
+          <p class="text-[11px] text-cine-muted mt-4">* Valores ilustrativos sujeitos a alteração conforme tabela vigente da bilheteria.</p>
+        </div>
+
+        <!-- Bomboniere -->
+        <div id="bomboniere">
+          <span class="text-xs uppercase tracking-[0.25em] text-cine-gold font-bold">Para acompanhar o filme</span>
+          <h2 class="font-display text-3xl font-bold text-white mt-1 mb-6">Bomboniere Laguna</h2>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-5 rounded-xl bg-cine-dark border border-cine-border">
+              <div class="w-10 h-10 rounded-lg bg-cine-gold/15 text-cine-gold flex items-center justify-center mb-3">
+                <i data-lucide="popcorn" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-white">Combo Individual</h3>
+              <p class="text-xs text-cine-muted mt-1">Pipoca média quentinha (salgada ou doce) + 1 refrigerante 500ml.</p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-cine-dark border border-cine-border">
+              <div class="w-10 h-10 rounded-lg bg-cine-red/15 text-cine-red flex items-center justify-center mb-3">
+                <i data-lucide="flame" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-white">Combo Casal / Duplo</h3>
+              <p class="text-xs text-cine-muted mt-1">Balde grande de pipoca com manteiga + 2 refrigerantes 500ml + chocolate.</p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-cine-dark border border-cine-border sm:col-span-2 flex items-center justify-between gap-4">
+              <div>
+                <h3 class="font-bold text-white">Sessões para Escolas & Eventos</h3>
+                <p class="text-xs text-cine-muted mt-1">Condições especiais para turmas escolares, aniversários e fechamento de sala.</p>
+              </div>
+              <a href="https://wa.me/5575999999999?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20sess%C3%B5es%20para%20escolas%20ou%20eventos%20no%20Cine%20Laguna." 
+                 target="_blank"
+                 class="shrink-0 bg-white text-black hover:bg-cine-gold text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-lg transition-colors">
+                Solicitar
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossas 2 Unidades -->
+  <section id="unidades" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <span class="text-xs uppercase tracking-[0.25em] text-cine-red font-bold">Onde Estamos</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-1">Nossas Unidades em Alagoinhas</h2>
+      <p class="text-sm text-cine-muted mt-2">Escolha o cinema mais perto de você e venha curtir a sessão.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Unidade 1: Shopping Laguna -->
+      <div class="bg-cine-card border border-cine-border rounded-2xl p-8 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="inline-block bg-cine-red/15 text-cine-red border border-cine-red/30 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded">
+            Unidade 01 • Shopping
+          </span>
+          <h3 class="font-display text-2xl font-bold text-white">Cine Laguna — Shopping Laguna</h3>
+          <p class="text-sm text-cine-muted leading-relaxed">
+            Rua Dr. Dantas Bião, s/n - Jardim Petrolar, Alagoinhas - BA, CEP 48030-030.
+          </p>
+          <div class="pt-2 space-y-2 text-xs text-zinc-300">
+            <p class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-cine-gold"></i>
+              Bilheteria abre 30 min antes da 1ª sessão do dia
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="car" class="w-4 h-4 text-cine-gold"></i>
+              Comodidade e estacionamento no Shopping Laguna
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="https://maps.google.com/?q=Shopping+Laguna+Alagoinhas+BA" 
+             target="_blank"
+             class="flex-1 inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 border border-cine-border text-white text-xs uppercase tracking-wider font-semibold py-3.5 px-4 rounded-lg transition-colors">
+            <i data-lucide="map-pin" class="w-4 h-4 text-cine-red"></i>
+            Ver no Mapa
+          </a>
+          <a href="https://wa.me/5575999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20unidade%20do%20Shopping%20Laguna." 
+             target="_blank"
+             class="flex-1 inline-flex items-center justify-center gap-2 bg-cine-red hover:bg-cine-redHover text-white text-xs uppercase tracking-wider font-semibold py-3.5 px-4 rounded-lg transition-colors">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            WhatsApp Shopping
+          </a>
+        </div>
+      </div>
+
+      <!-- Unidade 2: Cine Laguna Geek -->
+      <div class="bg-cine-card border border-cine-border rounded-2xl p-8 flex flex-col justify-between space-y-6">
+        <div class="space-y-3">
+          <span class="inline-block bg-cine-purple/15 text-purple-400 border border-purple-500/30 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded">
+            Unidade 02 • Centro
+          </span>
+          <h3 class="font-display text-2xl font-bold text-white">Cine Laguna Geek — Praça Ruy Barbosa</h3>
+          <p class="text-sm text-cine-muted leading-relaxed">
+            Praça Ruy Barbosa, Centro, Alagoinhas - BA.
+          </p>
+          <div class="pt-2 space-y-2 text-xs text-zinc-300">
+            <p class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-cine-gold"></i>
+              Bilheteria abre 30 min antes da 1ª sessão do dia
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="sparkles" class="w-4 h-4 text-purple-400"></i>
+              Ambiente temático e localização central de fácil acesso
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <a href="https://maps.google.com/?q=Praca+Ruy+Barbosa+Alagoinhas+BA" 
+             target="_blank"
+             class="flex-1 inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 border border-cine-border text-white text-xs uppercase tracking-wider font-semibold py-3.5 px-4 rounded-lg transition-colors">
+            <i data-lucide="map-pin" class="w-4 h-4 text-purple-400"></i>
+            Ver no Mapa
+          </a>
+          <a href="https://wa.me/5575999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20unidade%20Cine%20Laguna%20Geek%20da%20Pra%C3%A7a%20Ruy%20Barbosa." 
+             target="_blank"
+             class="flex-1 inline-flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white text-xs uppercase tracking-wider font-semibold py-3.5 px-4 rounded-lg transition-colors">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            WhatsApp Geek
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="border-t border-cine-border py-10 text-center text-xs text-cine-muted">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-display text-base font-bold text-white tracking-wider mb-1">CINE LAGUNA ALAGOINHAS</p>
+      <p>Shopping Laguna (Jardim Petrolar) • Unidade Geek (Praça Ruy Barbosa)</p>
+      <p class="mt-4 text-[11px] text-zinc-600">© 2026 Cine Laguna. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script Inteligente (Suporta Planilha Google Sheets CSV + Dados de Demonstração) -->
+  <script>
+    lucide.createIcons();
+
+    // =========================================================================
+    // CONFIGURAÇÃO DA PLANILHA GOOGLE SHEETS (OPCIONAL / AUTOMÁTICO)
+    // Quando fechar com o cliente, basta publicar a planilha como CSV e colar
+    // o link entre as aspas abaixo. Enquanto estiver vazio "", usa os exemplos!
+    // Colunas da planilha: status | unidade | titulo | genero | classificacao | idioma | horarios | poster | descricao
+    // =========================================================================
+    const GOOGLE_SHEETS_CSV_URL = ""; 
+    const WHATSAPP_NUMBER = "5575999999999";
+
+    // Filmes de demonstração (usados enquanto a planilha não estiver conectada)
+    const fallbackMovies = [
+      {
+        status: "cartaz",
+        unidade: "shopping",
+        unidadeLabel: "Shopping Laguna",
+        titulo: "Horizonte Sombrio",
+        genero: "Ação • Suspense • 132 min",
+        classificacao: "14 Anos",
+        idioma: "Dublado",
+        horarios: ["18:00", "20:45"],
+        poster: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=700&q=80",
+        descricao: "Um agente precisa impedir uma sabotagem antes do amanhecer."
+      },
+      {
+        status: "cartaz",
+        unidade: "geek",
+        unidadeLabel: "Unidade Geek",
+        titulo: "O Reino das Estrelas",
+        genero: "Animação • Família • 105 min",
+        classificacao: "Livre",
+        idioma: "Dublado • 3D",
+        horarios: ["15:30", "17:45", "19:50"],
+        poster: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=700&q=80",
+        descricao: "Uma jornada mágica pelo universo para toda a família."
+      },
+      {
+        status: "cartaz",
+        unidade: "shopping",
+        unidadeLabel: "Shopping Laguna",
+        titulo: "A Última Frequência",
+        genero: "Terror • Mistério • 118 min",
+        classificacao: "16 Anos",
+        idioma: "Dublado",
+        horarios: ["21:15"],
+        poster: "https://images.unsplash.com/photo-1509347528160-9a9e33742cdb?auto=format&fit=crop&w=700&q=80",
+        descricao: "Sinais vindos de uma estação abandonada revelam segredos sombrios."
+      },
+      {
+        status: "breve",
+        unidade: "geek",
+        unidadeLabel: "Unidade Geek",
+        titulo: "Além do Órbita Zero",
+        genero: "Ficção Científica • 145 min",
+        classificacao: "12 Anos",
+        idioma: "Dublado / Leg",
+        horarios: ["Estreia Quinta"],
+        poster: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=700&q=80",
+        descricao: "A maior estreia sci-fi do ano chega em breve ao Cine Laguna."
+      }
+    ];
+
+    let allMovies = [...fallbackMovies];
+    let currentStatus = "cartaz";
+    let currentUnit = "todas";
+
+    // Parser simples para CSV do Google Sheets
+    function parseCSV(csvText) {
+      const lines = csvText.trim().split("\n");
+      const result = [];
+      for (let i = 1; i < lines.length; i++) {
+        const cols = lines[i].split(",").map(c => c.trim().replace(/^"|"$/g, ""));
+        if (cols.length >= 8 && cols[2]) {
+          const unitRaw = cols[1].toLowerCase();
+          result.push({
+            status: cols[0].toLowerCase() === "breve" ? "breve" : "cartaz",
+            unidade: unitRaw.includes("geek") ? "geek" : "shopping",
+            unidadeLabel: unitRaw.includes("geek") ? "Unidade Geek" : "Shopping Laguna",
+            titulo: cols[2],
+            genero: cols[3],
+            classificacao: cols[4],
+            idioma: cols[5],
+            horarios: cols[6].split(";").map(h => h.trim()),
+            poster: cols[7],
+            descricao: cols[8] || ""
+          });
+        }
+      }
+      return result;
+    }
+
+    async function initMovies() {
+      if (GOOGLE_SHEETS_CSV_URL) {
+        try {
+          const response = await fetch(GOOGLE_SHEETS_CSV_URL);
+          const text = await response.text();
+          const parsed = parseCSV(text);
+          if (parsed.length > 0) allMovies = parsed;
+        } catch (err) {
+          console.warn("Usando filmes padrão (planilha indisponível).", err);
+        }
+      }
+      renderMovies();
+    }
+
+    function renderMovies() {
+      const container = document.getElementById("movies-container");
+      const filtered = allMovies.filter(m => {
+        const matchStatus = m.status === currentStatus;
+        const matchUnit = currentUnit === "todas" || m.unidade === currentUnit;
+        return matchStatus && matchUnit;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div class="col-span-full text-center py-12 bg-cine-card border border-cine-border rounded-xl">
+            <p class="text-cine-muted text-sm">Nenhuma sessão encontrada para este filtro no momento.</p>
+          </div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(movie => {
+        const isGeek = movie.unidade === "geek";
+        const badgeColor = isGeek ? "bg-purple-600 text-white" : "bg-cine-red text-white";
+        const msg = encodeURIComponent(`Olá! Gostaria de informações sobre ingressos para o filme "${movie.titulo}" (${movie.unidadeLabel}).`);
+
+        return `
+          <div class="movie-card bg-cine-card border border-cine-border rounded-xl overflow-hidden flex flex-col justify-between">
+            <div>
+              <div class="relative aspect-[2/3] overflow-hidden bg-zinc-900">
+                <img src="${movie.poster}" alt="${movie.titulo}" class="movie-poster w-full h-full object-cover transition-transform duration-500">
+                <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                  <span class="${badgeColor} text-[10px] font-bold uppercase px-2.5 py-1 rounded shadow">${movie.unidadeLabel}</span>
+                  <span class="bg-black/80 backdrop-blur text-white text-[10px] font-bold px-2 py-1 rounded border border-white/10">${movie.classificacao}</span>
+                </div>
+                <span class="absolute bottom-3 left-3 bg-black/85 text-cine-gold text-[10px] font-bold uppercase px-2.5 py-1 rounded">
+                  ${movie.idioma}
+                </span>
+              </div>
+              <div class="p-5">
+                <p class="text-[11px] text-cine-gold uppercase tracking-wider font-semibold">${movie.genero}</p>
+                <h3 class="text-lg font-bold text-white mt-1 leading-snug">${movie.titulo}</h3>
+                ${movie.descricao ? `<p class="text-xs text-cine-muted mt-1.5 line-clamp-2">${movie.descricao}</p>` : ""}
+                
+                <div class="mt-4">
+                  <p class="text-[10px] uppercase tracking-wider text-cine-muted mb-2">
+                    ${movie.status === "cartaz" ? "Sessões:" : "Previsão:"}
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    ${movie.horarios.map(h => `<span class="px-3 py-1 bg-zinc-900 border border-cine-border rounded text-xs font-semibold text-white">${h}</span>`).join("")}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${msg}" 
+                 target="_blank"
+                 class="w-full inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-cine-red border border-cine-border hover:border-cine-red text-white text-xs uppercase tracking-wider font-semibold py-3 rounded-lg transition-colors">
+                <i data-lucide="ticket" class="w-4 h-4"></i>
+                ${movie.status === "cartaz" ? "Consultar Sessão" : "Avise-me na Estreia"}
+              </a>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      lucide.createIcons();
+    }
+
+    function setUnitFilter(unit, btn) {
+      currentUnit = unit;
+      document.querySelectorAll(".unit-btn").forEach(b => {
+        b.classList.remove("bg-zinc-800", "text-white");
+        b.classList.add("text-cine-muted");
+      });
+      btn.classList.remove("text-cine-muted");
+      btn.classList.add("bg-zinc-800", "text-white");
+      renderMovies();
+    }
+
+    function setStatusFilter(status, btn) {
+      currentStatus = status;
+      document.querySelectorAll(".status-btn").forEach(b => {
+        b.classList.remove("bg-cine-red", "text-white");
+        b.classList.add("text-cine-muted");
+      });
+      btn.classList.remove("text-cine-muted");
+      btn.classList.add("bg-cine-red", "text-white");
+      renderMovies();
+    }
+
+    initMovies();
+  </script>
+</body>
+</html>
